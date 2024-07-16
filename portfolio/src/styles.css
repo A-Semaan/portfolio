@@ -1,6 +1,65 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+    height: 100%;
+    width: 100%;
+}
 
 body {
     background-color: black;
     color: white;
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+}
+
+.DisplayFlex {
+    display: flex;
+}
+
+.Flex1 {
+    flex: 1;
+}
+
+.Flex2 {
+    flex: 2;
+}
+
+.Flex3 {
+    flex: 3;
+}
+
+.Flex4 {
+    flex: 4;
+}
+
+.Flex5 {
+    flex: 5;
+}
+
+.Flex6 {
+    flex: 6;
+}
+
+.FlexDirectionColumn {
+    flex-direction: column;
+}
+
+.Height100 {
+    height: 100%;
+}
+
+.Width100 {
+    width: 100%;
+}
+
+app-site-content {
+    background-color: red;
+}
+
+app-header {
+    background-color: green;
+}
+
+app-footer {
+    background-color: blue;
 }
