@@ -10,6 +10,7 @@ body {
     padding: 0px;
     margin: 0px;
     height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .DisplayFlex {
@@ -44,6 +45,18 @@ body {
     flex-direction: column;
 }
 
+.JustifyContentSpaceAround {
+    justify-content: space-around;
+}
+
+.JustifyContentSpaceBetween {
+    justify-content: space-between;
+}
+
+.JustifyContentSpaceEvenly {
+    justify-content: space-evenly;
+}
+
 .Height100 {
     height: 100%;
 }
@@ -52,13 +65,25 @@ body {
     width: 100%;
 }
 
+.PaddingLeft10 {
+    padding-left: 10px;
+}
+
+.ClickableItem{
+    cursor: pointer;
+}
+
+.TextAlignCenter{
+    text-align: center;
+}
+
 app-site-content {
     background-color: red;
 }
 
-app-header {
+/* app-header {
     background-color: green;
-}
+} */
 
 app-footer {
     background-color: blue;

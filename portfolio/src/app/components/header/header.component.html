@@ -1,1 +1,23 @@
-<p>header works!</p>
+<!-- <div class="DisplayFlex {{screenOrientation == 'portrait'?'FlexDirectionColumn':''}}"> -->
+<div class="HeaderWrapper">
+    <div class="LeftHeaderSection Flex3 PaddingLeft10 TextAlignCenter">
+        <span class="HeaderTitle">Antonio SEMAAN | Software Engineer</span>
+    </div>
+    <div class="MiddleHeaderSection Flex3 MinHeight10"></div>
+    <div class="RightHeaderSection Flex3">
+        <div class="DisplayFlex JustifyContentSpaceEvenly">
+            <div class="ClickableItem MainMenuItem {{currentView=='home'?'MainMenuItemSelected':''}} hover-underline-animation"
+                (click)="selectView('home')">
+                Home
+            </div>
+            <div class="ClickableItem MainMenuItem {{currentView=='projects'?'MainMenuItemSelected':''}} hover-underline-animation"
+                (click)="selectView('projects')">
+                Projects & Skills
+            </div>
+            <div class="ClickableItem MainMenuItem {{currentView=='contact'?'MainMenuItemSelected':''}} hover-underline-animation"
+                (click)="selectView('contact')">
+                Contact
+            </div>
+        </div>
+    </div>
+</div>

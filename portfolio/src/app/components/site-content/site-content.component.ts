@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { ViewType } from '../../types/view-type';
 
 @Component({
   selector: 'app-site-content',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './site-content.component.css'
 })
 export class SiteContentComponent {
-
+  @Input('currentView') currentView: ViewType = 'home'
 }

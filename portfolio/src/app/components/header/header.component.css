@@ -2,4 +2,68 @@
     display: block;
     height: 60px;
     position: fixed;
+    align-content: center;
+}
+
+.LeftHeaderSection > .HeaderTitle {
+    font-size: 24px;
+}
+
+.MainMenuItem {
+    font-size: 19px;
+}
+
+.MainMenuItemSelected.hover-underline-animation {
+    color: #0087ca;
+}
+
+.MainMenuItemSelected.hover-underline-animation::after {
+    background-color: #0087ca;
+}
+
+.ClickableItem.MainMenuItem {
+    transition: all ease-in-out 0.1s;
+}
+
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+}
+
+.hover-underline-animation:not(.MainMenuItemSelected)::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom center;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom center;
+}
+
+.HeaderWrapper{
+    display: flex;
+}
+
+@media screen and (max-width:600px){
+    .HeaderWrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    :host {
+        height: 120px !important;
+    }
+
+    .MinHeight10{
+        min-height: 10px;
+    }
 }
