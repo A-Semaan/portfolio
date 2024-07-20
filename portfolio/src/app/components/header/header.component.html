@@ -10,6 +10,10 @@
                 (click)="selectView('home')">
                 Home
             </div>
+            <div class="ClickableItem MainMenuItem {{currentView=='education'?'MainMenuItemSelected':''}} hover-underline-animation"
+                (click)="selectView('education')">
+                Education
+            </div>
             <div class="ClickableItem MainMenuItem {{currentView=='projects'?'MainMenuItemSelected':''}} hover-underline-animation"
                 (click)="selectView('projects')">
                 Projects & Skills

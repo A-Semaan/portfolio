@@ -1,0 +1,102 @@
+:host {
+  display: block;
+  height: 100%;
+}
+
+
+.HomeContentWrapper {
+  display: flex;
+  height: 100%;
+}
+
+.HomeContentProfileImageWrapper {
+  height: fit-content;
+  width: fit-content;
+}
+
+.HomeContentProfileImage {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+}
+
+.LeftHomeContent {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-right: 20px;
+}
+
+.RightHomeContent {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.TextContentWrapper {
+  width: 500px;
+}
+
+.TextContentTitle {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.TextContentSubtitle {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.TextContent {
+  font-size: 18px;
+}
+
+@media screen and (max-width:600px) {
+  .HomeContentWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .LeftHomeContent {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: unset;
+  }
+
+  .RightHomeContent {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding-left: unset;
+  }
+
+  .HomeContentProfileImage {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+  }
+
+  .TextContentWrapper {
+    width: 400px;
+    padding: 0px 20px;
+    text-align: center;
+  }
+
+  .TextContentTitle {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .TextContentSubtitle {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .TextContent {
+    font-size: 16px;
+  }
+}

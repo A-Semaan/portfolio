@@ -1,1 +1,1 @@
-export type ViewType = 'home' | 'projects' | 'contact'
+export type ViewType = 'home' | 'education' | 'projects' | 'contact'
