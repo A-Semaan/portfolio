@@ -65,6 +65,10 @@ body {
     width: 100%;
 }
 
+.PaddingTop10 {
+    padding-top: 10px;
+}
+
 .PaddingLeft10 {
     padding-left: 10px;
 }

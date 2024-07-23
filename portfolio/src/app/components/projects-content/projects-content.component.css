@@ -2,3 +2,85 @@
   display: block;
   height: 100%;
 }
+.ScrollBar{
+  --scrollbar-border-radius: 7px;
+  --scrollbar-padding: 4px;
+  --scrollbar-viewport-margin: 0;
+  --scrollbar-track-color: #189c8277;
+  --scrollbar-wrapper-color: #189c82;
+  --scrollbar-thumb-color: #189c82;
+  --scrollbar-thumb-hover-color: var(--scrollbar-thumb-color);
+  --scrollbar-size: 5px;
+  --scrollbar-hover-size: var(--scrollbar-size);
+  --scrollbar-thumb-transition: height ease-out 150ms, width ease-out 150ms;
+  --scrollbar-track-transition: height ease-out 150ms, width ease-out 150ms;
+}
+
+.ProjectsContentWrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  overflow: auto;
+}
+
+.ExperienceEntry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  text-align: center;
+  width: 100%;
+}
+
+.ExperienceEntry:not(.ExperienceEntry:last-child) {
+  margin-bottom: 30px;
+}
+
+.ExperienceEntryTitle {
+  font-size: 28px;
+  color: #1eb99b;
+}
+
+.ExperienceEntrySubtitle {
+  font-size: 22px;
+  color: #189c82;
+}
+
+.ExperienceEntryContent {
+  font-size: 18px;
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.ExperienceEntryContentItem {
+  display: flex;
+  margin: 5px 0px
+}
+
+.ExperienceEntryContentItemLeft {
+  flex: 1;
+  padding-right: 10px;
+  text-align: right;
+}
+
+.ExperienceEntryContentItemRight {
+  flex: 1;
+  padding-left: 10px;
+  text-align: left;
+}
+
+.AppLink {
+  margin: 10px;
+  font-size: 15px;
+}
+
+@media screen and (max-width:600px) {
+
+  .AppLink {
+    font-size: 15px;
+  }
+}

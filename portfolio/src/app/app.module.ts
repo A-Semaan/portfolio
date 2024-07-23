@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import { BrowserModule } from '@angular/platform-browser';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -11,6 +11,7 @@ import { HomeContentComponent } from './components/home-content/home-content.com
 import { EducationContentComponent } from './components/education-content/education-content.component';
 import { ProjectsContentComponent } from './components/projects-content/projects-content.component';
 import { ContactContentComponent } from './components/contact-content/contact-content.component';
+import { NgScrollbarModule } from 'ngx-scrollbar';
 
 @NgModule({
   declarations: [
@@ -26,10 +27,10 @@ import { ContactContentComponent } from './components/contact-content/contact-co
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    NgScrollbarModule
   ],
   providers: [
-    provideClientHydration()
   ],
   bootstrap: [AppComponent]
 })

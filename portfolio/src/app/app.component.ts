@@ -9,7 +9,7 @@ import { ScreenOrientationService } from './services/screen-orientation.service'
 })
 export class AppComponent {
   title = 'portfolio';
-  currentView: ViewType = 'home'
+  currentView: ViewType = 'projects'
 
   constructor(private screenOrientationService: ScreenOrientationService) { }
 

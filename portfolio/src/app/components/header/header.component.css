@@ -14,11 +14,11 @@
 }
 
 .MainMenuItemSelected.hover-underline-animation {
-    color: #0087ca;
+    color: #1eb99b;
 }
 
 .MainMenuItemSelected.hover-underline-animation::after {
-    background-color: #0087ca;
+    background-color: #1eb99b;
 }
 
 .ClickableItem.MainMenuItem {
