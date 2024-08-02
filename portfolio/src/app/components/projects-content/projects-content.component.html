@@ -20,18 +20,48 @@
                     </div>
                     <div class="ExperienceEntryContentItem">
                         <div class="ExperienceEntryContentItemLeft">
-                            Backend Technology
+                            Technologies Used
                         </div>
                         <div class="ExperienceEntryContentItemRight">
-                            .Net framework, .Net Core
+                            .Net framework, .Net Core, C#, Angular, TypeScript/JavaScript, Flutter, Dart, PostgreSQL
                         </div>
                     </div>
-                    <div class="ExperienceEntryContentItem">
-                        <div class="ExperienceEntryContentItemLeft">
-                            Frontend Technology
+                    <div class="ExperienceEntryExpandableContentItem">
+                        <div class="ExperienceEntryExpandableTitle ClickableItem" (click)="toggleFulltimeExperience()">
+                            <fa-icon [icon]="faCaretDown" class="AppLink"></fa-icon> More Info <fa-icon
+                                [icon]="faCaretDown" class="AppLink"></fa-icon>
                         </div>
-                        <div class="ExperienceEntryContentItemRight">
-                            Angular, Flutter
+                        <div
+                            class="ExperienceEntryExpandableContent {{fulltimeExperienceExpanded?'ExperienceEntryExpandedContent':''}}">
+                            <ng-scrollbar [appearance]="'compact'" [visibility]="'hover'"
+                                class="ScrollBar MoreInfoListWrapper">
+                                <ul class="MarginRight5">
+                                    <li>Led the task creation, priority management and development of version
+                                        2.2 of Wiseo (Oncology workflow management web app) for myself and
+                                        another team member.
+                                    </li>
+                                    <li>
+                                        Led the migration to Angular and .Net Core (40% in 5 months) Versions
+                                        2.0, 2.1 and brought 2.1 to production.
+                                    </li>
+                                    <li>
+                                        Engaged in development of Wiseo version 1.5, and implemented new
+                                        features leading to version 2.0. Effectively translated new business
+                                        requirements into technical specs and then into working features.
+                                    </li>
+                                    <li>
+                                        Participated in showcasing Wiseo in ESTRO Congress 2022 in Denmark.
+                                    </li>
+                                    <li>
+                                        Improved on the mobile app equivalent of Wiseo version 1.0 and led the
+                                        development of version 1.1 and 2.0 using Flutter.
+                                    </li>
+                                    <li>
+                                        Wrote and documented 100% of the use cases of Wiseo’s main modules
+                                        in an English user manual and translated it to French.
+                                    </li>
+                                </ul>
+                            </ng-scrollbar>
                         </div>
                     </div>
                 </div>
@@ -41,8 +71,8 @@
                     Freelance Mobile developper
                 </div>
                 <div class="ExperienceEntrySubtitle">
-                    Dare to Drink <fa-icon [icon]="faExternalLink" class="AppLink ClickableItem"
-                        (click)="openDareToDrinkWebsite()"></fa-icon>
+                    <span class="ClickableItem" (click)="openDareToDrinkWebsite()">Dare to Drink <fa-icon
+                            [icon]="faExternalLink" class="AppLink"></fa-icon></span>
                 </div>
                 <div class="ExperienceEntryContent">
                     <div class="ExperienceEntryContentItem">
@@ -63,16 +93,25 @@
                     </div>
                     <div class="ExperienceEntryContentItem">
                         <div class="ExperienceEntryContentItemLeft">
-                            Frontend Technology
+                            Technologies Used
                         </div>
                         <div class="ExperienceEntryContentItemRight">
-                            Flutter
+                            Flutter, Dart, SQLite
+                        </div>
+                    </div>
+                    <div class="ExperienceEntryContentItem">
+                        <div class="ExperienceEntryContentItemLeft">
+                            Github Project
+                        </div>
+                        <div class="ExperienceEntryContentItemRight">
+                            <span class="ClickableItem UrlLink" (click)="openDareToDrinkCode()">Dare to Drink <fa-icon
+                                    [icon]="faExternalLink" class="AppLink"></fa-icon></span>
                         </div>
                     </div>
                 </div>
                 <div class="ExperienceEntrySubtitle PaddingTop10">
-                    Wifi Direct <fa-icon [icon]="faExternalLink" class="AppLink ClickableItem"
-                        (click)="openWifiDirectWebsite()"></fa-icon>
+                    <span class="ClickableItem" (click)="openWifiDirectWebsite()">Wifi Direct <fa-icon
+                            [icon]="faExternalLink" class="AppLink"></fa-icon></span>
                 </div>
                 <div class="ExperienceEntryContent">
                     <div class="ExperienceEntryContentItem">
@@ -93,10 +132,19 @@
                     </div>
                     <div class="ExperienceEntryContentItem">
                         <div class="ExperienceEntryContentItemLeft">
-                            Frontend Technology
+                            Technologies Used
                         </div>
                         <div class="ExperienceEntryContentItemRight">
-                            Flutter
+                            Flutter, Dart
+                        </div>
+                    </div>
+                    <div class="ExperienceEntryContentItem">
+                        <div class="ExperienceEntryContentItemLeft">
+                            Github Project
+                        </div>
+                        <div class="ExperienceEntryContentItemRight">
+                            <span class="ClickableItem UrlLink" (click)="openWifiDirectCode()">WiFi Direct Share<fa-icon
+                                    [icon]="faExternalLink" class="AppLink"></fa-icon></span>
                         </div>
                     </div>
                 </div>

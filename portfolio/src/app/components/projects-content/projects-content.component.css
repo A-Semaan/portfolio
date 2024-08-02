@@ -2,7 +2,8 @@
   display: block;
   height: 100%;
 }
-.ScrollBar{
+
+.ScrollBar {
   --scrollbar-border-radius: 7px;
   --scrollbar-padding: 4px;
   --scrollbar-viewport-margin: 0;
@@ -61,6 +62,13 @@
   margin: 5px 0px
 }
 
+.ExperienceEntryExpandableContentItem {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0px;
+  align-items: center;
+}
+
 .ExperienceEntryContentItemLeft {
   flex: 1;
   padding-right: 10px;
@@ -73,14 +81,42 @@
   text-align: left;
 }
 
+.ExperienceEntryExpandableTitle {
+  color: #1eb99b;
+  border: #1eb99b 1px solid;
+  border-radius: 30px;
+  max-width: fit-content;
+  padding: 5px 20px;
+  margin-bottom: 10px;
+}
+
+.ExperienceEntryExpandableContent {
+  max-height: 0px;
+  overflow: hidden;
+  transition: all ease-in-out 0.2s;
+}
+
+.ExperienceEntryExpandedContent {
+  max-height: 200px;
+}
+
+.MoreInfoListWrapper {
+  height: 200px;
+  overflow: auto;
+  text-align: left;
+}
+
 .AppLink {
   margin: 10px;
   font-size: 15px;
 }
 
 @media screen and (max-width:600px) {
-
   .AppLink {
     font-size: 15px;
+  }
+
+  .ExperienceEntryExpandableContent {
+    max-width: 350px;
   }
 }

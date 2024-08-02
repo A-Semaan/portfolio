@@ -1,1 +1,76 @@
-<p>contact-content works!</p>
+<div [style.height]="height+'px'">
+    <ng-scrollbar [appearance]="'compact'" [visibility]="'hover'" class="ScrollBar">
+        <div class="ContactContentWrapper">
+            <div class="ContactContentProfileImageWrapper"><img class="ContactContentProfileImage"
+                    src="/assets/img/profile_cropped.jpg" /></div>
+            <div class="ContactSectionWrapper">
+                <div class="ContactSectionTitle">
+                    Summary
+                </div>
+                <div class="ContactSectionContent">
+                    I am a software developer skilled in .NET Core, .NET Framework, Angular, and vanilla JavaScript. My
+                    experience includes using Kendo for Angular, Telerik ASP, and Flutter for mobile apps.
+                    <br />
+                    I have completed my engineering degree at CNAM, focusing on software architecture, development and
+                    quality assurance.
+                    <br />
+                    I have contributed to numerous projects, demonstrating problem-solving skills and a collaborative
+                    approach. My
+                    portfolio highlights diverse projects, showcasing my adaptability and commitment to delivering
+                    high-quality software solutions.
+                    <br />
+                    I am dedicated to continuous learning and innovation, aiming to drive
+                    excellence in every project I undertake.
+                </div>
+            </div>
+            <div class="ContactSectionWrapper">
+                <div class="ContactSectionTitle">
+                    Based In
+                </div>
+                <div class="ContactSectionContent">
+                    Jounieh, Lebanon
+                    <br />
+                    Zahle, Lebanon
+                </div>
+            </div>
+            <div class="ContactSectionWrapper">
+                <div class="ContactSectionTitle">
+                    Spoken Languages
+                </div>
+                <div class="ContactSectionContent">
+                    Arabic: Native Speaker
+                    <br />
+                    French: DELF B2 Certified
+                    <br />
+                    English: BULATS C2 Certified
+                </div>
+            </div>
+            <div class="ContactSectionWrapper">
+                <div class="ContactSectionTitle">
+                    Contact Info
+                </div>
+                <div class="ContactSectionSubtitle MarginBottom15 ClickableItem" (click)="openCV()">
+                    My CV <fa-icon [icon]="faExternalLink" class="AppLink"></fa-icon>
+                </div>
+                <div class="ContactSectionSubtitle Margin">
+                    Email
+                </div>
+                <div class="ContactSectionContent MarginBottom15">
+                    <a href="mailto:semaan.antonio@hotmail.com" target="_blank">semaan.antonio&#64;hotmail.com</a>
+                </div>
+                <div class="ContactSectionSubtitle">
+                    LinkedIn
+                </div>
+                <div class="ContactSectionContent MarginBottom15">
+                    <a href="https://linkedin.com/in/antonio-semaan-882794186/" target="_blank">linkedin.com/in/antonio-semaan-882794186/</a>
+                </div>
+                <div class="ContactSectionSubtitle">
+                    GitHub
+                </div>
+                <div class="ContactSectionContent">
+                    <a href="https://github.com/A-Semaan" target="_blank">github.com/A-Semaan</a>
+                </div>
+            </div>
+        </div>
+    </ng-scrollbar>
+</div>

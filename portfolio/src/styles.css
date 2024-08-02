@@ -73,12 +73,24 @@ body {
     padding-left: 10px;
 }
 
+.MarginRight5 {
+    margin-right: 5px;
+}
+
+.MarginBottom15 {
+    margin-bottom: 15px;
+}
+
 .ClickableItem{
     cursor: pointer;
 }
 
 .TextAlignCenter{
     text-align: center;
+}
+
+.UrlLink{
+    color: #1eb99b;
 }
 
 /* app-site-content {
