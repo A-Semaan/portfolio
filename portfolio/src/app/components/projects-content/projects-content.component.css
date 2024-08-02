@@ -119,4 +119,8 @@
   .ExperienceEntryExpandableContent {
     max-width: 350px;
   }
+  .ProjectsContentWrapper{
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
 }
