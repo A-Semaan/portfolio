@@ -25,6 +25,6 @@ export class ContactContentComponent implements OnInit {
   }
 
   openCV(){
-    window.open("https://drive.google.com/file/d/1d9YpzQNFUTRTKgELbGb2rUTFT52-VDgB/view?usp=sharing", "_blank");
+    window.open("https://drive.google.com/file/d/1t1bxcEj59mzur7hvWfn9uFpvWeVjXzke/view?usp=drive_link", "_blank");
   }
 }

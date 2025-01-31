@@ -10,7 +10,7 @@ export class ProjectsContentComponent implements OnInit {
   faExternalLink = faExternalLink;
   faCaretDown = faCaretDown
 
-  fulltimeExperienceExpanded = false;
+  fulltimeExperienceExpandedIndex = -1;
 
   height: number = 0;
 
@@ -43,7 +43,7 @@ export class ProjectsContentComponent implements OnInit {
     this.height = window.innerHeight - 80 < 400 ? 400 : window.innerHeight - 80;
   }
 
-  toggleFulltimeExperience() {
-    this.fulltimeExperienceExpanded = !this.fulltimeExperienceExpanded;
+  toggleFulltimeExperience(index: number) {
+    this.fulltimeExperienceExpandedIndex = this.fulltimeExperienceExpandedIndex == index ? -1 : index;
   }
 }

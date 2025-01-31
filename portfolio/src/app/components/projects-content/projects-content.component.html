@@ -20,46 +20,91 @@
                     </div>
                     <div class="ExperienceEntryContentItem">
                         <div class="ExperienceEntryContentItemLeft">
-                            Technologies Used
+                            Technologies and Tools Used
                         </div>
                         <div class="ExperienceEntryContentItemRight">
-                            .Net framework, .Net Core, C#, Angular, TypeScript/JavaScript, Flutter, Dart, PostgreSQL
+                            .Net Framework/Core, Angular, Flutter, PostgreSQL, Git, Jira
                         </div>
                     </div>
                     <div class="ExperienceEntryExpandableContentItem">
-                        <div class="ExperienceEntryExpandableTitle ClickableItem" (click)="toggleFulltimeExperience()">
+                        <div class="ExperienceEntryExpandableTitle ClickableItem" (click)="toggleFulltimeExperience(0)">
                             <fa-icon [icon]="faCaretDown" class="AppLink"></fa-icon> More Info <fa-icon
                                 [icon]="faCaretDown" class="AppLink"></fa-icon>
                         </div>
                         <div
-                            class="ExperienceEntryExpandableContent {{fulltimeExperienceExpanded?'ExperienceEntryExpandedContent':''}}">
+                            class="ExperienceEntryExpandableContent {{fulltimeExperienceExpandedIndex==0?'ExperienceEntryExpandedContent':''}}">
                             <ng-scrollbar [appearance]="'compact'" [visibility]="'hover'"
                                 class="ScrollBar MoreInfoListWrapper">
                                 <ul class="MarginRight5">
-                                    <li>Led the task creation, priority management and development of version
-                                        2.2 of Wiseo (Oncology workflow management web app) for myself and
-                                        another team member.
+                                    <li>In a startup environment, conduct sprint planning meetings to create, define,
+                                        and assign tasks for a two-person Scrum team to develop the company’s Web App.
                                     </li>
-                                    <li>
-                                        Led the migration to Angular and .Net Core (40% in 5 months) Versions
-                                        2.0, 2.1 and brought 2.1 to production.
+                                    <li>Participate in client-company meetings for feature requests, modifications,
+                                        setup.</li>
+                                    <li>Work regularly and closely with project manager to translate business
+                                        requirements to technical specs.</li>
+                                    <li>Maintained an existing version of the platform, contributed to 80% of the
+                                        development of the next version, and successfully took it to production.</li>
+                                    <li>Currently co-leading the development of a new version, which is nearing
+                                        production.</li>
+                                    <li>Build and maintain scalable Web App and a companion Mobile app with .NET
+                                        Core/Framework, Angular, and Flutter, while following best coding practices.
                                     </li>
-                                    <li>
-                                        Engaged in development of Wiseo version 1.5, and implemented new
-                                        features leading to version 2.0. Effectively translated new business
-                                        requirements into technical specs and then into working features.
-                                    </li>
-                                    <li>
-                                        Participated in showcasing Wiseo in ESTRO Congress 2022 in Denmark.
-                                    </li>
-                                    <li>
-                                        Improved on the mobile app equivalent of Wiseo version 1.0 and led the
-                                        development of version 1.1 and 2.0 using Flutter.
-                                    </li>
-                                    <li>
-                                        Wrote and documented 100% of the use cases of Wiseo’s main modules
-                                        in an English user manual and translated it to French.
-                                    </li>
+                                    <li>Conduct regular code reviews and ensure the quality of the product by conducting
+                                        manual and unit tests.</li>
+                                    <li>Led the migration of the company's product from .NET Framework to .NET Core and
+                                        Angular, improving performance, scalability, and overall user experience.</li>
+                                    <li>Write and document 100% of the use cases of the product’s main modules in an
+                                        English user manual and translated it to French</li>
+                                </ul>
+                            </ng-scrollbar>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ExperienceEntry">
+                <div class="ExperienceEntryTitle">
+                    Fullstack Software Engineer Web/Mobile
+                </div>
+                <div class="ExperienceEntrySubtitle">
+                    Freelance (Single Project)
+                </div>
+                <div class="ExperienceEntryContent">
+                    <div class="ExperienceEntryContentItem">
+                        <div class="ExperienceEntryContentItemLeft">
+                            From
+                        </div>
+                        <div class="ExperienceEntryContentItemRight">
+                            August 2024, until present
+                        </div>
+                    </div>
+                    <div class="ExperienceEntryContentItem">
+                        <div class="ExperienceEntryContentItemLeft">
+                            Technologies and Toots Used
+                        </div>
+                        <div class="ExperienceEntryContentItemRight">
+                            .Net Core, Flutter, Entity Framework, PostgreSQL, Google Cloud Services, Git
+                        </div>
+                    </div>
+                    <div class="ExperienceEntryExpandableContentItem">
+                        <div class="ExperienceEntryExpandableTitle ClickableItem" (click)="toggleFulltimeExperience(1)">
+                            <fa-icon [icon]="faCaretDown" class="AppLink"></fa-icon> More Info <fa-icon
+                                [icon]="faCaretDown" class="AppLink"></fa-icon>
+                        </div>
+                        <div
+                            class="ExperienceEntryExpandableContent {{fulltimeExperienceExpandedIndex==1?'ExperienceEntryExpandedContent':''}}">
+                            <ng-scrollbar [appearance]="'compact'" [visibility]="'hover'"
+                                class="ScrollBar MoreInfoListWrapper">
+                                <ul class="MarginRight5">
+                                    <li>Design the underlying architecture of the backend as well as its database and
+                                        features.</li>
+                                    <li>Implement a robust backend with .Net Core 8 and Entity Framework.</li>
+                                    <li>Build user mobile app using flutter.</li>
+                                    <li>Implemented mobile and backend features relying on google cloud services and
+                                        platforms like Firebase Messaging, Google Maps, Google People API, Deeps
+                                        Linking.</li>
+                                    <li>Implement best coding practices and conducting thorough testing.</li>
+                                    <li>Code available on GitHub upon request.</li>
                                 </ul>
                             </ng-scrollbar>
                         </div>
@@ -88,7 +133,7 @@
                             From
                         </div>
                         <div class="ExperienceEntryContentItemRight">
-                            fall 2021, until present
+                            Jun 2021 - Jul 2022
                         </div>
                     </div>
                     <div class="ExperienceEntryContentItem">
@@ -127,7 +172,7 @@
                             From
                         </div>
                         <div class="ExperienceEntryContentItemRight">
-                            fall 2021, until present
+                            Sept 2021 - Jun 2022
                         </div>
                     </div>
                     <div class="ExperienceEntryContentItem">
